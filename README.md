@@ -9,7 +9,9 @@ $ source env.sh
 Na pasta .../lu_cb/src/ no arquivo makefile, deve ser escrito:
 
 CFLAGS := $(CFLAGS) -Wall -O1 -pg -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization
+
 CFLAGS := $(CFLAGS) -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels
+
 LDFLAGS := $(LDFLAGS) -pthread -lm 
 
 Onde, 
