@@ -1,0 +1,59 @@
+lu.c: In function ‘main’:
+lu.c:230: warning: cast from pointer to integer of different size
+
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:650: note: vectorized 1 loops in function.
+
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:674: note: vectorized 1 loops in function.
+
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:697: note: vectorized 1 loops in function.
+
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:724: note: vectorized 1 loops in function.
+
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:751: note: vectorized 1 loops in function.
+
+lu.c:1203: note: not vectorized: unsupported use in stmt.
+lu.c:1148: note: created 1 versioning for alias checks.
+
+lu.c:1148: note: LOOP VECTORIZED.
+lu.c:1129: note: vectorized 1 loops in function.
+
+lu.c:1094: note: vectorized 0 loops in function.
+
+lu.c:1023: note: LOOP VECTORIZED.
+lu.c:985: note: vectorized 1 loops in function.
+
+lu.c:1083: note: LOOP VECTORIZED.
+lu.c:1050: note: vectorized 1 loops in function.
+
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:761: note: created 1 versioning for alias checks.
+
+lu.c:761: note: LOOP VECTORIZED.
+lu.c:777: note: vectorized 4 loops in function.
+
+lu.c:493: note: vectorized 0 loops in function.
+
+lu.c:125: note: vectorized 0 loops in function.
