@@ -25,13 +25,13 @@ Após alteração caso já tenha feito o build antes disso:
  
 $ parsecmgmt -a uninstall -p splash2.lu_cb
 
-Caso não tenha feito a buiuld ainda:
+Caso não tenha feito a build ainda:
 
 $ parsecmgmt -a build -p splash2.lu_cb
 
 Depois executar normalmente: 
 
-$ arsecmgmt -a run -p splash2.lu_cb -i 'native'
+$ parsecmgmt -a run -p splash2.lu_cb -i 'native'
 
 O arquivo será gerado dentro da pasta /run dentro do projeto.
 
@@ -49,7 +49,7 @@ $ gprof lu_cb gmon.out
 
 # Profiling na máquina local
 
-na pasta *.../lu_cb/inst/amd64-linux.gcc* haverá um arquivo *lu.c*. Você também pode executar o profiling apenas com este arquivo na sua máquina local. Para tal, execute:
+na pasta *.../lu_cb/obj/amd64-linux.gcc* haverá um arquivo *lu.c*. Você também pode executar o profiling apenas com este arquivo na sua máquina local. Para tal, execute:
 
 * Compilação:
 
@@ -62,3 +62,9 @@ $ ./lu
 * Profiling
 
 $ gprof lu gmon.out
+
+# Auto vetorização
+
+Para habilitar a auto vetorização do algoritmo e salvar o _output_ em um arquivo _vectorization.txt_, compile o código com a seguinte instrução:
+
+gcc -pthread -g -o lu.o lu.c -O3 -ftree-vectorize -funsafe-math-optimizations -msse2 -ftree-vectorizer-verbose=2 > vectorization.txt -lm
