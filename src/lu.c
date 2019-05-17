@@ -289,9 +289,7 @@ char *argv[];
 
 /* POSSIBLE ENHANCEMENT:  Here is where one might distribute the a[i]
    blocks across physically distributed memories as desired.
-
    One way to do this is as follows:
-
    for (i=0;i<nblocks;i++) {
      for (j=0;j<nblocks;j++) {
        proc_num = BlockOwner(i,j);
@@ -302,7 +300,6 @@ char *argv[];
        } else {
          size = block_size*block_size;
        }
-
        Place all addresses x such that 
        (&(a[i+j*nblocks][0]) <= x < &(a[i+j*nblocks][size-1])) 
        on node proc_num
